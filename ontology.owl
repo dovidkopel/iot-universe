@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#DigitalInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#DigitalInput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#HttpRemoteSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#HttpRemoteSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#TcpRemoteSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Input"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#IpRemoteSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#IpRemoteSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#RemoteSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#LocalSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#LocalSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Output -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Output"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#PhysicalInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#PhysicalInput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#PollingSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#PollingSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#RemoteSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#RemoteSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#PhysicalInput"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#StreamingSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#StreamingSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#TcpRemoteSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#TcpRemoteSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#IpRemoteSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#TriggerSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#TriggerSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dkopel/ontologies/2015/9/untitled-ontology-4#Sensor"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
